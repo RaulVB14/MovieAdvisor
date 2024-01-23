@@ -1,7 +1,7 @@
 package pojos;
 
 
-import config.AppConfig;
+
 import daos.FilmDAO;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
@@ -20,10 +20,8 @@ import static utils.LeerCSV.lecturaCSV;
 
 @Repository
 public class FilmPOJO implements FilmDAO {
-    ArrayList<Film> peliculas = new ArrayList<>();
+    public static ArrayList<Film> peliculas = new ArrayList<>();
 
-
-   private AppConfig appConfig = new AppConfig();
 
     //Cargar Peliculas
     public List<Film> init() {
