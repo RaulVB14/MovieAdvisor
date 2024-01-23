@@ -6,9 +6,6 @@ package model;
 
 import jakarta.persistence.*;
 
-import java.util.Collections;
-import java.util.List;
-
 /**
  *
  * @author Alex

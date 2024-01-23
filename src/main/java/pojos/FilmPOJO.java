@@ -59,9 +59,8 @@ public class FilmPOJO implements FilmDAO {
             CriteriaQuery<Film> query = cb.createQuery(Film.class);
             Root<Film> root = query.from(Film.class);
             //root = FROM Estudiantes
-            query.select(root.get("id,titulo,year,genres"));
+            query.select(root.get("id,titulo,year,generos"));
             return session.createQuery(query).getResultList();
-            //Esta query es un select * from Estudiantes
         } catch (Exception e) {
             System.err.println(e);
             return null;
